@@ -1,0 +1,65 @@
+---
+booktitle: Proceedings of Algorithmic Learning Theory
+shortname: ALT
+volume: 83
+year: '2018'
+start: 2018-04-07
+end: 2018-04-09
+published: 2018-04-09
+url: http://proceedings.mlr.press
+location: Lanzarote, Spain
+layout: proceedings
+series: Proceedings of Machine Learning Research
+id: ALT-2018
+month: 0
+cycles: false
+editor:
+- given: Firdaus
+  family: Janoos
+- given: Mehryar
+  family: Mohri
+- given: Karthik
+  family: Sridharan
+title: Proceedings of Machine Learning Research
+description: |
+  Proceedings of Algorithmic Learning Theory on 07-09 April 2018
+
+  Published as Volume 83 by the Proceedings of Machine Learning Research on 09 April 2018.
+
+  Volume Edited by:
+    Firdaus Janoos
+    Mehryar Mohri
+    Karthik Sridharan
+
+  Series Editors:
+    Neil D. Lawrence
+    Mark Reid
+date_str: 07--09 Apr
+baseurl: "/v83"
+twitter_username: MLResearchPress
+github_username: mlresearch
+markdown: kramdown
+permalink: "/:title.html"
+github:
+  edit: true
+  repository: v83
+display:
+  copy_button:
+    bibtex: true
+    endnote: true
+    apa: true
+  comments: false
+email: ''
+conference:
+  name: Algorithmic Learning Theory
+  url: 
+  location: 
+  dates:
+  - 2018-04-07
+  - 2018-04-08
+  - 2018-04-09
+analytics:
+  google:
+    tracking_id: UA-92432422-1
+# Site settings
+# Auto generated from /Users/neil/mlresearch/v83/alt2018.bib

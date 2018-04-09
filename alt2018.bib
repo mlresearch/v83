@@ -1,0 +1,412 @@
+@Proceedings{ALT-2018,
+    booktitle = {Proceedings of Algorithmic Learning Theory},
+    name = {Algorithmic Learning Theory},
+    shortname = {ALT},
+    editor = {Firdaus Janoos and Mehryar Mohri and Karthik Sridharan},
+    volume = {83},
+    year = {2018},
+    start = {2018-04-07},
+    end = {2018-04-09},
+    published = {2018-04-09},
+    url = {http://www.cs.cornell.edu/conferences/alt2018/},
+    location = {Lanzarote, Spain}
+}
+@InProceedings{preface,
+    title = {{A}lgorithmic {L}earning {T}heory ({ALT}) 2017: {P}reface},
+    author = {Mehryar Mohri and Karthik Sridharan},
+    pages = {1-2},
+    abstract = {}
+}
+
+@InProceedings{aziz18,
+author    = {Aziz, Maryam and Anderton, Jesse and Kaufmann, Emilie and Aslam, Javed},
+title     = {Pure Exploration in Infinitely-Armed Bandit Models with Fixed-Confidence},
+pages     = {3-24},
+abstract  = {We consider the problem of near-optimal arm identification in the fixed confidence setting of the infinitely armed bandit problem when nothing is known about the arm reservoir distribution. We (1)~introduce a PAC-like framework within which to derive and cast results; (2)~derive a sample complexity lower bound for near-optimal arm identification; (3)~propose an algorithm that identifies a nearly-optimal arm with high probability and derive an upper bound on its sample complexity which is within a log factor of our lower bound; and (4)~discuss whether our $\log^2 \frac{1}{\delta}$ dependence is inescapable for ``two-phase'' (select arms first, identify the best later) algorithms in the infinite setting. This work permits the application of bandit models to a broader class of problems where fewer assumptions hold.} }
+
+
+@InProceedings{bassily18,
+  author={Bassily, Raef and Moran, Shay and Nachum, Ido and Shafer, Jonathan and Yehudayoff, Amir},
+  title={Learners that Use Little Information},
+  pages={25-55},
+  abstract={
+	We study learning algorithms that are restricted to using a small amount of information from their input sample. We introduce a category of learning algorithms we term {\em $d$-bit information learners}, which are algorithms whose output conveys at most $d$ bits of information of their input. A central theme in this work is that such algorithms generalize. 
+	
+	We focus on the  learning capacity of these algorithms, and prove sample complexity bounds with tight dependencies on the confidence and error parameters. We also observe connections with well studied notions such as sample compression schemes, Occam's razor, PAC-Bayes and differential privacy.
+	
+	We discuss an approach that allows us to prove upper bounds on the amount of information that algorithms reveal about their inputs, and also provide a lower bound by showing a simple concept class for which every (possibly randomized) empirical risk minimizer must reveal a lot of information. On the other hand, we show that in the distribution-dependent setting every VC class has empirical risk minimizers that do not reveal a lot of information.
+  }
+}
+
+@InProceedings{Besson18,
+author    = {Besson, Lilian and Kaufmann, Emilie},
+title     = {{Multi-Player Bandits Revisited}},
+pages     = {56-92},
+abstract  = {Multi-player Multi-Armed Bandits (MAB) have been extensively studied in the literature, motivated by applications to Cognitive Radio systems. Driven by such applications as well, we motivate the introduction of several levels of feedback for multi-player MAB algorithms. Most existing work assume that \emph{sensing information} is available to the algorithm. Under this assumption, we improve the state-of-the-art lower bound for the regret of any decentralized algorithms and introduce two algorithms, \emph{RandTopM} and \emph{MCTopM}, that are shown to empirically outperform existing algorithms. Moreover, we provide strong theoretical guarantees for these algorithms, including a notion of asymptotic optimality in terms of the number of selections of bad arms. We then introduce a promising heuristic, called \emph{Selfish}, that can operate without sensing information, which is crucial for emerging applications to Internet of Things networks. We investigate the empirical performance of this algorithm and provide some first theoretical elements for the understanding of its behavior.}
+}
+
+@InProceedings{bshouty18,
+author    = {Bshouty, Nader H. and E. Bshouty-Hurani, Vivian and Haddad, George and Hashem, Thomas and Khoury, Fadi and Sharafy, Omar },
+title     = {Adaptive Group Testing Algorithms to Estimate the Number of Defectives},
+pages     = {93-110},
+abstract  = {We study the problem of estimating the number of defective
+items in adaptive Group testing by using a minimum number of queries.
+We improve the existing algorithm and prove a lower bound that shows that,
+for constant estimation, the number of tests in our algorithm is optimal.} }
+
+@InProceedings{Bubeck18,
+author    = {Bubeck, S\'ebastien and Cohen, Michael and Li, Yuanzhi},
+title     = {Sparsity, variance and curvature in multi-armed bandits},
+pages     = {111-127},
+abstract  = {In (online) learning theory the concepts of sparsity, variance and curvature are well-understood and are routinely used to obtain refined regret and generalization bounds. In this paper we further our understanding of these concepts in the more challenging limited feedback scenario. We consider the adversarial multi-armed bandit and linear bandit settings and solve several open problems pertaining to the existence of algorithms with favorable regret bounds under the following assumptions: (i) sparsity of the individual losses, (ii) small variation of the loss sequence, and (iii) curvature of the action set. Specifically we show that (i) for $s$-sparse losses one can obtain $\tilde{O}(\sqrt{s T})$-regret (solving an open problem by Kwon and Perchet), (ii) for loss sequences with variation bounded by $Q$ one can obtain $\tilde{O}(\sqrt{Q})$-regret (solving an open problem by Kale and Hazan), and (iii) for linear bandit on an $\ell_p^n$ ball one can obtain $\tilde{O}(\sqrt{n T})$-regret for $p \in [1,2]$ and one has $\tilde{\Omega}(n \sqrt{T})$-regret for $p>2$ (solving an open problem by Bubeck, Cesa-Bianchi and Kakade). A key new insight to obtain these results is to use regularizers satisfying more refined conditions than general self-concordance.}
+}
+
+@InProceedings{cesabianchi18,
+author    = {Cesa{-}Bianchi, Nicol{\`{o}} and Shamir, Ohad},
+title     = {Bandit Regret Scaling with the Effective Loss Range},
+pages     = {128-151},
+abstract  = {We study how the regret guarantees of nonstochastic multi-armed 
+bandits can be improved, if the effective range of the losses in each round is 
+small (for example, the maximal difference between two losses or in a given 
+round). Despite a recent impossibility result, we show how this can be made 
+possible under certain mild additional assumptions, such as availability of 
+rough estimates of the losses, or knowledge of the loss of a single, possibly 
+unspecified arm, at the end of each round. Along the way, we develop a novel 
+technique which might be of independent interest, to convert any multi-armed 
+bandit algorithm with regret depending on the loss range, to an algorithm with 
+regret depending only on the effective range, while attaining better regret 
+bounds than existing approaches.}
+}
+
+@InProceedings{Blanca18,
+author    = {Blanca, Antonio and Chen, Zongchen and \v{S}tefankovi\v{c}, Daniel and Vigoda, Eric},
+title     = {Structure Learning of ${H}$-colorings},
+pages     = {152-185},
+abstract  = {We study the structure learning problem for $H$-colorings, an important class of Markov random fields that capture key combinatorial structures on graphs, including proper colorings and independent sets, as well as spin systems from statistical physics. The learning problem is as follows: for a fixed (and known) constraint graph $H$ with $q$ colors and an unknown graph $G=(V,E)$ with $n$ vertices, given uniformly random $H$-colorings of $G$, how many samples are required to learn the edges of the unknown graph~$G$? We give a characterization of $H$ for which the problem is identifiable for every~$G$, i.e., we can learn $G$ with an infinite number of samples. We also show that there are identifiable constraint graphs for which one cannot hope to learn every graph~$G$ efficiently.
+
+We focus particular attention on the case of proper vertex $q$-colorings of graphs of maximum degree~$d$ where intriguing connections to statistical physics phase transitions appear. We prove that in the tree uniqueness region (i.e., when $q>d$) the problem is identifiable and we can learn $G$ in $\mathsf{poly}(d,q)\times O(n^2\log{n})$ time. In contrast for soft-constraint systems, such as the Ising model, the best possible running time is exponential in $d$. In the tree non-uniqueness region (i.e., when $q\leq d$) we prove that the problem is not identifiable and thus $G$ cannot be learned. Moreover, when $q<d-\sqrt{d} + \Theta(1)$ we prove that even learning an equivalent graph (any graph with the same set of $H$-colorings) is computationally hard---sample complexity is exponential in $n$ in the worst case. We further explore the connection between the efficiency/hardness of the structure learning problem and the uniqueness/non-uniqueness phase transition for general $H$-colorings and prove that under a well-known condition in statistical physics, known as the Dobrushin uniqueness condition, we can learn~$G$ in $\mathsf{poly}(d,q)\times O(n^2\log{n})$ time.}
+}
+
+
+@InProceedings{cheng18,
+author    = {Cheng, Xiang and Bartlett, Peter},
+title     = {Convergence of Langevin MCMC in KL-divergence},
+pages     = {186-211},
+abstract  = {Langevin diffusion is a commonly used tool for sampling from a given distribution. In this work, we establish that when the target density $\p^*$ is such that $\log \p^*$ is $L$ smooth and $m$ strongly convex, discrete Langevin diffusion produces a distribution $\p$ with $\KL{\p}{\p^*}\leq \epsilon$ in $\tilde{O}(\frac{d}{\epsilon})$ steps, where $d$ is the dimension of the sample space.  We also study the convergence rate when the strong-convexity assumption is absent. By considering the Langevin diffusion as a gradient flow in the space of probability distributions, we obtain an elegant analysis that applies to the stronger property of convergence in KL-divergence and gives a conceptually simpler proof of the best-known convergence results in weaker metrics.} 
+}
+
+
+@InProceedings{Clemencon18,
+author    = {Cl\'emen\c{c}on, Stephan and Korba, Anna and Sibony, Eric},
+title     = {Ranking Median Regression: Learning to Order through Local Consensus},
+pages     = {212-245},
+abstract  = {This article is devoted to the problem of predicting the value taken by a random permutation $\Sigma$, describing the preferences of an individual over a set of numbered items $\{1,\; \ldots,\; n\}$ say, based on the observation of an input/explanatory r.v. $X$ (\textit{e.g.} characteristics of the individual), when error is measured by the Kendall's $\tau$ distance. In the probabilistic formulation of the 'Learning to Order' problem we propose, which extends the framework for statistical Kemeny ranking aggregation developped in \citet{CKS17}, this boils down to recovering conditional Kemeny medians of $\Sigma$ given $X$ from i.i.d. training examples $(X_1, \Sigma_1),\; \ldots,\; (X_N, \Sigma_N)$. For this reason, this statistical learning problem is referred to as \textit{ranking median regression} here. Our contribution is twofold. We first propose a probabilistic theory of ranking median regression: the set of optimal elements is characterized, the performance of empirical risk minimizers is investigated in this context and situations where fast learning rates can be achieved are also exhibited. Next we introduce the concept of local consensus/median, in order to derive efficient methods for ranking median regression. The major advantage of this local learning approach lies in its close connection with the widely studied Kemeny aggregation problem. From an algorithmic perspective, this permits to build predictive rules for ranking median regression by implementing efficient techniques for (approximate) Kemeny median computations at a local level in a tractable manner. In particular, versions of $k$-nearest neighbor and tree-based methods, tailored to ranking median regression, are investigated. Accuracy of piecewise constant ranking median regression rules is studied under a specific smoothness assumption for $\Sigma$'s conditional distribution given $X$. The results of various numerical experiments are also displayed for illustration purpose.} 
+}
+
+@InProceedings{csiba18,
+author    = {Csiba, Dominik and Richt\'arik, Peter},
+title     = {Coordinate Descent Faceoff: Primal or Dual?},
+pages     = {246-267},
+abstract  = {Randomized coordinate descent (RCD) methods are state-of-the-art algorithms for training linear predictors via minimizing regularized empirical risk. When the number of examples (n) is much larger than the number of features (d), a common strategy is to apply RCD to the dual problem. On the other hand, when the number of features is much larger than the number of examples, it makes sense to apply RCD directly to the primal problem. In this paper we provide the first joint study of these two approaches when applied to L2-regularized linear ERM. First, we show through a rigorous analysis that for dense data, the above intuition is precisely correct. However, we find that for sparse and structured data,  primal RCD can significantly outperform dual RCD even if $d << n$, and vice versa, dual RCD can be much faster than primal RCD even if $n << d$. Moreover, we show that, surprisingly, a single sampling strategy minimizes both the (bound on the) number of iterations and the overall expected complexity of RCD. Note that the latter complexity measure also takes into account  the average cost of the iterations, which depends on the structure and sparsity of the data, and on the sampling strategy employed.  We confirm our theoretical predictions using extensive experiments with both synthetic and real data sets. 
+}
+}
+
+
+@InProceedings{Dagan18,
+author    = {Dagan, Yuvan and Crammer Koby},
+title     = {A Better Resource Allocation Algorithm with Semi-Bandit Feedback},
+pages     = {268-320},
+abstract = {We study a sequential resource allocation problem between a fixed
+number of arms. On each iteration the algorithm distributes a
+resource among the arms in order to maximize the expected success
+rate. Allocating more of the resource to a given arm increases the
+probability that it succeeds, yet with a cut-off. We follow
+\cite{LCS} and assume that the probability increases
+linearly until it equals one, after which allocating more of the
+resource is wasteful. These cut-off values are fixed and unknown to
+the learner. We present an algorithm for this problem and
+prove a regret upper bound of $O(\log n)$ improving over the best
+known bound of $O(\log^2 n)$. Lower bounds we prove show that our
+upper bound is tight. Simulations demonstrate the superiority of our
+algorithm.},
+}
+
+
+@InProceedings{Eldridge18,
+author    = {Eldridge, Justin and Belkin, Mikhail and Wang, Yusu},
+title     = {Unperturbed: spectral analysis beyond Davis-Kahan},
+pages     = {321-358},
+abstract  = {Classical matrix perturbation results, such as Weyl's theorem for
+    eigenvalues and the Davis-Kahan theorem for eigenvectors, are general
+    purpose. These classical bounds are tight in the worst case, but in many
+    settings sub-optimal in the typical case.  In this paper, we present
+    perturbation bounds which consider the nature of the perturbation and its
+    interaction with the unperturbed structure in order to obtain significant
+    improvements over the classical theory in many scenarios, such as when the
+    perturbation is random. We demonstrate the utility of these new results by
+    analyzing perturbations in the stochastic blockmodel where we derive much
+    tighter bounds than provided by the classical theory.}
+}
+
+
+@InProceedings{ensign18,
+author    = "Ensign, Danielle and Sorelle, Frielder and Scott, Neville and Carlos, Scheidegger and Suresh, Venkatasubramanian",
+title     = "Decision making with limited feedback",
+pages     = {359-367},
+abstract  = "When models are trained for deployment in decision-making in various real-world
+settings, they are typically trained in batch mode. Historical data is used to
+train and validate the models prior to deployment. However, in many settings,
+\emph{feedback} changes the nature of the training process. Either the learner
+does not get full feedback on its actions, or the decisions
+made by the trained model influence what future training data it will see.
+
+In this paper, we
+focus on the problems of recidivism prediction and predictive policing. We
+present the first algorithms with provable regret for these problems, by 
+showing that both problems (and others like these) can be abstracted into a general
+reinforcement learning framework called partial monitoring. We also 
+discuss the policy implications of these solutions.
+"
+}
+
+@InProceedings{feige18,
+author    = {Feige, Uriel and  Mansour, Yishay and Schapire, Robert E. },
+title     = {Robust Inference for Multiclass Classification},
+pages     = {368-386},
+abstract  = {We consider the problem of robust inference in which inputs may be
+maliciously corrupted by a powerful adversary, and the learner's
+goal is to accurately predict the original, uncorrupted input's true
+label given only the adversarially corrupted version of the input.
+We specifically focus on the multiclass version of this problem in
+which more than two labels are possible. We substantially extend and
+generalize previous work which had only considered the binary case,
+thus uncovering stark differences between the two cases. We show how
+robust inference can be modeled as a zero-sum game between a learner
+who maximizes the expected accuracy, and an adversary. The value of
+this game is the best-attainable accuracy rate of any algorithm. We
+then show how the optimal policy for both the learner and adversary
+can be exactly characterized in terms of a particular hypergraph,
+specifically, as the hypergraph's maximum fractional independent set
+and minimum fractional set cover, respectively. This
+characterization yields efficient algorithms in the size of the
+domain (number of possible inputs). For the typical setting that the
+domain is huge, we also design efficient local computation
+algorithms for approximating maximum fractional independent set in
+hypergraphs. This leads to a near optimal algorithm for the learner
+whose complexity is independent of the domain size, instead
+depending only on the rank and maximum degree of the underlying
+hypergraph, and on the desired approximation ratio.} 
+}
+
+@InProceedings{Gajane18,
+author    = {Gajane, Pratik and Urvoy, Tanguy and Kaufmann, Emilie},
+title     = {Corrupt Bandits for Preserving Local Privacy},
+pages     = {387-412},
+abstract  = {We study a variant of the stochastic multi-armed bandit (MAB) problem in which the rewards are corrupted. In this framework, motivated by privacy preservation in online recommender systems, the goal is to maximize the sum of the (unobserved) rewards, based on the observation of transformation of these rewards through a stochastic corruption process with known parameters. We provide a lower bound on the expected regret of any bandit algorithm in this corrupted setting. We devise a frequentist algorithm, KLUCB-CF, and a Bayesian algorithm, TS-CF and give upper bounds on their regret. We also provide the appropriate corruption parameters to guarantee a desired level of local privacy and analyze how this impacts the regret. Finally, we present some experimental results that confirm our analysis.} 
+}
+
+@InProceedings{gao18,
+author = {Ziyuan Gao and Sanjay Jain and Frank Stephan and Thomas Zeugmann},
+title  = {On the Help of Bounded Shot Verifiers, Comparators and Standardisers
+for Learnability in Inductive Inference},
+pages = {413-437},
+abstract ={The present paper deals with the inductive inference of recursively enumerable
+languages from positive data (also called text). 
+It introduces the learning models of \emph{verifiability} and 
+\emph{comparability}. The input to a verifier is an index $e$ and a text of
+the target language~$L$, and the learner has to \emph{verify} whether or not
+the index~$e$ input is correct for the target language $L$. A comparator
+receives two indices of languages from the target class $\cL$ as input and
+has to decide in the limit whether or not these indices generate the same
+language. Furthermore, \emph{standardisability} is studied, where a
+\emph{standardiser} receives an index~$j$ of some target language~$L$ from
+the class~$\cL$, and for every~$L\in\cL$ there must be an index~$e$ such
+that~$e$ generates $L$ and the standardiser has to map every index~$j$ 
+for $L$ to $e$.
+Additionally, the common learning models of \emph{explanatory learning},
+\emph{conservative explanatory learning}, and \emph{behaviourally correct learning}
+are considered. For almost all learning models mentioned above it is also
+appropriate to consider the number of times a learner changes its mind.
+In particular, if no mind change occurs then we obtain the \emph{finite} variant
+of the models considered. Occasionally, also learning with the help of an oracle
+is taken into consideration.
+
+The main goal of this paper is to figure out to what extent 
+verifiability, comparability, and standardisability are helpful for the
+inductive inference of classes of recursively enumerable languages. 
+Here we also distinguish between \emph{indexed families}, \emph{one-one enumerable
+classes}, and \emph{recursively enumerable classes}. 
+Our results are manyfold, and an almost complete picture is obtained. In particular,
+for indexed families and recursively enumerable classes finite comparability,
+finite standardisability, and finite verifiability always imply finite
+learnability. If at least one mind change is allowed, then there are 
+differences,
+i.e., for indexed families, comparability or verifiability imply conservative explanatory learning, but
+standardisability does not; still explanatory learning can be achieved.}
+}
+
+
+@InProceedings{Gonem18,
+author    = {Gonem, Alon and Gilad-Bachrach, Ram},
+title     = {Smooth Sensitivity Based Approach for Differentially Private PCA},
+pages     = {438-450},
+abstract  = {We consider the challenge of differentially private PCA. 
+Currently known methods for this task either employ the computationally intensive
+exponential mechanism or require an access to the covariance matrix,
+and therefore fail to utilize potential sparsity of the data. The problem of
+designing simpler and more efficient methods for this task has been
+raised as an open problem in Kapralov et al. 
+
+In this paper we address this problem by employing the output
+perturbation mechanism. Despite being arguably the simplest and most
+straightforward technique, it has been overlooked due to
+the large global sensitivity associated with publishing the
+leading eigenvector. We tackle this issue by adopting a smooth sensitivity based 
+approach, which allows us to
+establish differential privacy (in a worst-case manner) and
+near-optimal sample complexity results under eigengap assumption. We
+consider both the pure and the approximate  notions of differential privacy, and demonstrate a tradeoff between privacy level and sample complexity. We conclude by
+suggesting how our results can be extended to related problems.}
+}
+
+@InProceedings{hsieh18,
+author    = {Hsieh, Ya-ping and Cevher, Volkan},
+title     = {Dimension-free Information Concentration via Exp-Concavity},
+pages     = {451-469},
+abstract  = {Information concentration of probability measures have important implications in learning theory. Recently, it is discovered that the information content of a log-concave distribution concentrates around their differential entropy, albeit with an unpleasant dependence on the ambient dimension. In this work, we prove that if the potentials of the log-concave distribution are \emph{exp-concave}, which is a central notion for fast rates in online and statistical learning, then the concentration of information can be further improved to depend only on the exp-concavity parameter, and hence can be dimension independent.  Central to our proof is a novel yet simple application of the variance Brascamp-Lieb inequality. In the context of learning theory, concentration of information immediately implies high-probability results to many of the previous bounds that only hold in expectation.} 
+}
+
+
+@InProceedings{jaasaari18,
+author    = {J\"{a}\"{a}saari, Elias and Lepp\"{a}-aho, Janne and Silander, Tomi and Roos, Teemu},
+title     = {Minimax Optimal Bayes Mixtures for Memoryless Sources over Large Alphabets},
+pages     = {470-488},
+abstract  = {The normalized maximum likelihood (NML) distribution achieves minimax log loss and coding regret for the multinomial model. In practice other nearly minimax distributions are used instead as calculating the sequential probabilities needed for coding and prediction takes exponential time with NML. The Bayes mixture obtained with the Dirichlet prior $\operatorname{Dir}(1/2, \dots, 1/2)$ and asymptotically minimax modifications of it have been widely studied in the context of large sample sizes. Recently there has also been interest in minimax optimal coding distributions for large alphabets.  We investigate Dirichlet priors that achieve minimax coding regret when the alphabet size $m$ is finite but large in comparison to the sample size $n$. We prove that a Bayes mixture with the Dirichlet prior $\operatorname{Dir}(1/3, \dots, 1/3)$ is optimal in this regime (in particular, when $m > \frac{5}{2} n + \frac{4}{n - 2} + \frac{3}{2}$).  The worst-case regret of the resulting distribution approaches the NML regret as the alphabet size grows.} 
+}
+
+
+@InProceedings{jurgenson18,
+author    = {Jurgenson, Tom and Mansour, Yishay},
+title     = {Learning Decision Trees with Stochastic Linear Classifiers},
+pages     = {489-528},
+abstract  = {In this work we propose a top-down decision tree learning algorithm with a class of linear classifiers called stochastic linear classifiers as the internal nodes' hypothesis class. To this end, we derive efficient algorithms for minimizing the Gini index for this class for each internal node, although the problem is non-convex. Moreover, the proposed algorithm has a theoretical guarantee under the weak stochastic hypothesis assumption.} }
+
+@InProceedings{kallus18,
+author    = {Kallus, Nathan},
+title     = {Instrument-Armed Bandits},
+pages     = {529-546},
+abstract  = {We extend the classic multi-armed bandit (MAB) model to the setting of noncompliance, where the arm pull is a mere instrument and the treatment applied may differ from it, which gives rise to the instrument-armed bandit (IAB) problem. The IAB setting is relevant whenever the experimental units are human since free will, ethics, and the law may prohibit unrestricted or forced application of treatment. In particular, the setting is relevant in bandit models of dynamic clinical trials and other controlled trials on human interventions. Nonetheless, the setting has not been fully investigate in the bandit literature. We show that there are various and divergent notions of regret in this setting, all of which coincide only in the classic MAB setting. We characterize the behavior of these regrets and analyze standard MAB algorithms. We argue for a particular kind of regret that captures the causal effect of treatments but show that standard MAB algorithms cannot achieve sublinear control on this regret. Instead, we develop new algorithms for the IAB problem, prove new regret bounds for them, and compare them to standard MAB algorithms in numerical examples.}
+}
+
+@InProceedings{locatelli18,
+author    = {Locatelli, Andrea and Carpentier, Alexandra and Kpotufe, Samory},
+title     = {An Adaptive Strategy for Active Learning with Smooth Decision Boundary},
+pages     = {547-571},
+abstract  = {We present the first adaptive strategy for active learning in the setting of classification with smooth decision boundary. The problem of adaptivity (to unknown distributional parameters) has remained opened since the seminal work of Castro and Nowak (2007), which first established (active learning) rates for this setting. While some recent advances on this problem establish \emph{adaptive} rates in the case of univariate data, adaptivity in the more practical setting of multivariate data has so far remained elusive. Combining insights from various recent works, we show that, for the multivariate case, a careful reduction to univariate-adaptive strategies yield near-optimal rates without prior knowledge of distributional parameters.}
+}
+
+
+@InProceedings{Mahloujifar18,
+author    = {Mahloujifar, Saeed and Diochnos, Dimitrios I. and Mahmoody, Mohammad},
+title     = {Learning under $p$-Tampering Attacks},
+pages     = {572-596},
+abstract  = {Recently, Mahloujifar and Mahmoody (TCC'17) studied attacks against learning algorithms  using a special case of Valiant's malicious noise, called $p$-tampering,  in which the adversary gets to change any training example with independent probability $p$ but  is limited to only choose `adversarial' examples with correct labels. They obtained $p$-tampering attacks that increase the error probability in the so called `targeted' poisoning model in which the adversary's goal is to increase the loss of the trained hypothesis over a particular test example. At the heart of their attack was an efficient algorithm to bias the average output of any bounded real-valued function through $p$-tampering. 
+
+In this work, we present new biasing attacks for biasing the average output of bounded real-valued functions. Our new biasing attacks achieve in \emph{polynomial-time} the the best bias  achieved by MM16 through an \emph{exponential} time $p$-tampering attack.  Our improved biasing attacks, directly imply improved $p$-tampering attacks against learners in the targeted poisoning model. As a bonus, our attacks come with considerably simpler analysis compared to previous attacks.  
+We also  study the possibility of PAC learning under $p$-tampering attacks in the \emph{non-targeted} (aka indiscriminate) setting where the adversary's goal is  to increase the risk of the generated hypothesis (for a random test example). We show that PAC learning is  \emph{possible} under $p$-tampering poisoning attacks essentially whenever it is possible in the realizable setting without the attacks. We further show that PAC learning  under `no-mistake' adversarial noise is \emph{not} possible, if the adversary could choose the (still limited to only $p$ fraction of) tampered examples that  she substitutes with adversarially chosen ones. Our formal model for such `bounded-budget' tampering attackers is  inspired by the notions of (strong) adaptive corruption in secure multi-party computation.} }
+
+
+@InProceedings{modi18,
+author    = {Modi, Aditya and Jiang, Nan and Singh, Satinder and Tewari, Ambuj},
+title     = {Markov Decision Processes with Continuous Side Information},
+pages     = {597-618},
+abstract  = { We consider a reinforcement learning (RL) setting in which the agent interacts with a sequence of episodic MDPs. At the start of each episode the agent has access to some side-information or context that determines the dynamics of the MDP for that episode. Our setting is motivated by applications in healthcare where baseline measurements of a patient at the start of a treatment episode form the context that may provide information about how the patient might respond to treatment decisions. 
+We propose algorithms for learning in such Contextual Markov Decision Processes (CMDPs) under an assumption that the unobserved MDP parameters vary smoothly with the observed context. We give lower and upper PAC bounds under the smoothness assumption. Because our lower bound has an exponential dependence on the dimension, we also consider a tractable linear setting where the context creates linear combinations of a finite set of MDPs. For the linear setting, we give a PAC learning algorithm based on KWIK learning techniques.} 
+}
+
+@InProceedings{Nissim18,
+author    = {Nissim, Kobbi and Stemmer, Uri},
+title     = {Clustering Algorithms for the Centralized and Local Models},
+pages     = {619-653},
+abstract  = {We revisit the problem of finding a minimum enclosing ball with differential privacy: Given a set of $n$ points in the $d$-dimensional Euclidean space and an integer $t\leq n$,
+the goal is to find a ball of the smallest radius $r_{opt}$ enclosing at least $t$ input points. The problem is motivated by its various applications to differential privacy, including the sample and aggregate technique, private data exploration, and clustering. 
+Without privacy concerns, minimum enclosing ball has a polynomial time approximation scheme (PTAS), which computes a ball of radius almost $r_{opt}$ (the problem is NP-hard to solve exactly). In contrast, under differential privacy, until this work, only a $O(\sqrt{\log n})$-approximation algorithm was known. 
+We provide new constructions of differentially private algorithms for minimum enclosing ball achieving constant factor approximation to $r_{opt}$ both in the centralized model (where a trusted curator collects the sensitive information and analyzes it with differential privacy) and in the local model (where each respondent randomizes her answers to the data curator to protect her privacy). 
+We demonstrate how to use our algorithms as a building block for approximating $k$-means in both models.} 
+}
+
+@InProceedings{pasteris18,
+author    = {Pasteris, Stephen and Vitale, Fabio and Gentile, Claudio and Herbster, Mark},
+title     = {On Similarity Prediction and Pairwise Clustering},
+pages     = {654-681},
+abstract  = {We consider the problem of clustering a finite set of items from pairwise similarity information. Unlike what is done in the literature on this subject,  we do so in a passive learning setting, and with no specific constraints on the cluster shapes other than their size. We investigate the problem in different settings: i. an online setting, where we provide a tight characterization of the prediction complexity in the mistake bound model, and ii. a standard stochastic batch setting, where we give tight upper and lower bounds on the achievable generalization error. Prediction performance is measured both in terms of the ability to recover the similarity function encoding the hidden clustering and in terms of how well we classify each item within the set. The proposed algorithms are time efficient.}
+}
+
+
+@InProceedings{Pentina18,
+author    = {Pentina, Anastasia and Ben-David, Shai},
+title     = {Multi-task {K}ernel {L}earning Based on {P}robabilistic {L}ipschitzness},
+pages     = {682-701},
+abstract  = {In multi-task learning the learner is given data for a set of related learning tasks and aims to improve the overall learning performance by transferring information between them. A typical assumption exploited in this setting is that the tasks share a beneficial representation that can be learned form the joint training data of all tasks. This way, the training data of each task can be utilized to enhance the learning of other tasks in the set. Probabilistic Lipschitzness (PL) is a parameter that reflects one way in which some data representation can be beneficial for a classification learning task. In this work we propose to achieve multi-task learning by learning a kernel function relative to which each of the tasks in the set has a "high level" of probabilistic Lipschitzness. In order to be able to do that, we need to introduce a new variant of PL - one that allows reliable estimation of its value from finite size samples. We show that by having access to large amounts of training data in total (possibly the union of training sets for various tasks), the learner can identify a kernel function that would lead to fast learning rates per task when used for Nearest Neighbor classification or in a cluster-based active labeling procedure. }
+}
+
+
+@InProceedings{Rahmanian18,
+  author={Rahmanian, Holakou and Helmbold, David P. and Vishwanathan, S.V.N.},
+  title={Online Learning of Combinatorial Objects via Extended Formulation},
+  pages={702-724},
+  abstract  = {
+  The standard techniques for online learning of combinatorial objects
+  perform multiplicative updates followed by projections into the convex hull of all the objects.
+  However, this methodology can be expensive if the convex hull contains many facets.
+  For example, the convex hull of $n$-symbol Huffman trees is known to have exponentially many facets.
+  We get around this difficulty by exploiting extended formulations, which encode the polytope of combinatorial objects in a higher dimensional ``extended'' space with only polynomially many facets. We develop a general framework for converting extended formulations into efficient online algorithms with good relative loss bounds. We present applications of our framework to online learning of Huffman trees and permutations.
+  The regret bounds of the resulting algorithms are within a factor of $\Ocal(\sqrt{\log(n)})$ 
+  of the state-of-the-art specialized algorithms for permutations, 
+  and depending on the loss regimes, improve on or match the state-of-the-art for Huffman trees. 
+  Our method is general and can be applied to other combinatorial objects. }
+}
+
+@InProceedings{Reeve18,
+author    = {Reeve, Henry and Mellor, Joe and Brown, Gavin},
+title     = {The K-Nearest Neighbour UCB Algorithm for Multi-Armed Bandits with Covariates},
+pages     = {725-752},
+abstract  = {In this paper we propose and explore the $k$-Nearest Neighbour UCB algorithm for multi-armed bandits with covariates. We focus on a setting where covariates are supported on a metric space of low intrinsic dimension, such as a manifold embedded within a high dimensional ambient feature space. The algorithm is conceptually simple and straightforward to implement. Unlike previous methods such as the UCBogram and Adaptively Binned Successive Elimination, the $k$-Nearest Neighbour UCB algorithm does not require prior knowledge of the intrinsic dimension of the marginal distribution. It is also naturally anytime, without resorting to the doubling trick. We prove a regret bound for the $k$-Nearest Neighbour UCB algorithm which is minimax optimal up to logarithmic factors. In particular, the algorithm automatically takes advantage of both low intrinsic dimensionality of the marginal distribution over the covariates and low noise in the data, expressed as a margin condition. In addition, focusing on the case of bounded rewards, we give corresponding regret bounds for the $k$-Nearest Neighbour KL-UCB algorithm, which is an analogue of the KL-UCB algorithm adapted to the setting of multi-armed bandits with covariates. Finally, we present empirical results which demonstrate the ability of both the $k$-Nearest Neighbour UCB and $k$-Nearest Neighbour KL-UCB to take advantage of situations where the data is supported on an unknown sub-manifold of a high-dimensional feature space.} 
+}
+
+@InProceedings{Shkel18,
+author    = {Shkel, Yanina and Raginsky, Maxim and Verd\'{u}, Sergio},
+title     = {Sequential prediction with coded side information under logarithmic loss},
+pages     = {753-769},
+abstract  = {We study the problem of sequential prediction with coded side information under logarithmic loss (log-loss). We show an operational equivalence between this setup and lossy compression with log-loss distortion. Using this insight, together with recent work on lossy compression with log-loss, we connect prediction strategies with distributions in a certain subset of the probability simplex. This allows us to derive a Shtarkov-like bound for regret and to evaluate the regret for several illustrative classes of experts. In the present work, we mainly focus on the ``batch'' side information  setting with sequential prediction.} 
+}
+
+@InProceedings{talebi18,
+author    = {Talebi, Mohammad Sadegh and Maillard, Odalric-Ambrym},
+title     = {Variance-Aware Regret Bounds for Undiscounted Reinforcement Learning in MDPs},
+pages     = {770-805},
+abstract  = {The problem of reinforcement learning in an unknown and discrete Markov Decision Process (MDP) under the average-reward criterion is considered, when
+the learner interacts with the system in a single stream of observations, starting from an initial state without any reset.
+We revisit the minimax lower bound for that problem by making appear the local variance of the bias function  in place of the diameter of the MDP.
+Furthermore, we provide a novel analysis of the \texttt{\textsc{KL-Ucrl}} algorithm establishing a high-probability regret bound scaling as
+$\widetilde {\mathcal O}\Bigl({\textstyle \sqrt{S\sum_{s,a}{\bf V}^\star_{s,a}T}}\Big)$ for this algorithm for ergodic MDPs, where $S$ denotes the number of states and
+where ${\bf V}^\star_{s,a}$ is the variance of the bias function with respect to the next-state distribution following action $a$ in state $s$.
+The resulting bound improves upon the best previously known regret bound $\widetilde {\Ocal}(DS\sqrt{AT})$ for that algorithm, where $A$ and $D$ respectively denote
+the maximum number of actions (per state) and the diameter of MDP. We finally compare the leading terms of the two bounds in some benchmark MDPs indicating
+that the derived bound can provide an order of magnitude improvement in some cases. Our analysis leverages novel variations of the transportation lemma
+combined with Kullback-Leibler concentration inequalities, that we believe to be of independent interest.
+} 
+}
+
+@InProceedings{Wang18,
+author    = {Wang, Jialei and Wang, Weiran and Garber, Dan and Srebro, Nathan},
+title     = {Efficient coordinate-wise leading eigenvector computation},
+pages     = {806-820},
+abstract  = {We develop and analyze efficient "coordinate-wise" methods for finding the leading eigenvector, where each step involves only a vector-vector product.  We establish global convergence with overall runtime guarantees that are at least as good as Lanczos's method and dominate it for slowly decaying spectrum. Our methods are based on combining a shift-and-invert approach with coordinate-wise algorithms for linear regression.} 
+}
+@InProceedings{Mao18,
+author = {Cheng Mao and Jonathan Weed and Philippe Rigollet},
+title = {Minimax Rates and Efficient Algorithms for Noisy Sorting},
+pages={821-847},
+abstract = {There has been a recent surge of interest in studying permutation-based models for ranking from pairwise comparison data. Despite being structurally richer and more robust than parametric ranking models, permutation-based models are less well understood statistically and generally lack efficient learning algorithms. In this work, we study a prototype of permutation-based ranking models, namely, the noisy sorting model. We establish the optimal rates of learning the model under two sampling procedures. Furthermore, we provide a fast algorithm to achieve near-optimal rates if the observations are sampled independently. Along the way, we discover properties of the symmetric group which are of theoretical interest.}
+}
