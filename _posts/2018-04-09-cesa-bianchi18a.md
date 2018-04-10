@@ -21,8 +21,8 @@ page: 128-151
 order: 128
 cycles: false
 author:
-- given: Nicol{ò}
-  family: Cesa{-}Bianchi
+- given: Nicolò
+  family: Cesa-Bianchi
 - given: Ohad
   family: Shamir
 date: 2018-04-09
