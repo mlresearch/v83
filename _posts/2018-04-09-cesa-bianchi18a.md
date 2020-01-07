@@ -37,6 +37,6 @@ issued:
   - 4
   - 9
 pdf: http://proceedings.mlr.press/v83/cesa-bianchi18a/cesa-bianchi18a.pdf
-extras: []
+extras: [Note: Section 4 contains an error, see https://arxiv.org/abs/1705.05091 for a revised version]
 # Format based on citeproc: http://blog.martinfenner.org/2013/07/30/citeproc-yaml-for-bibliographies/
 ---
